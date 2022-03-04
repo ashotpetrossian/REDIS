@@ -18,4 +18,4 @@ client's CPU.
 The inspiration for such a project came from V.Grigoryan, Director of
 Picsart Academy.
 In the documentation can be found a brief description and guideline for the commands.
-// Contributer : https://github.com/TigranGhazaryan
+// Contributor : https://github.com/TigranGhazaryan
