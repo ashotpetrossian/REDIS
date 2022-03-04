@@ -90,7 +90,7 @@ public:
         if (root != nullptr) {
             return root->m_key;
         } else {
-            return T(); // ????
+            return T();
         }
     }
 
@@ -287,9 +287,12 @@ private:
     }
 
     T operator_helper(Node* node, T key) {
-        if (node == nullptr) { return T(); } // ????
-        if (node->m_key == key) { return key; }
-        else {
+        if (node == nullptr) { 
+            return T(); 
+        }
+        if (node->m_key == key) { 
+            return key; 
+        } else {
             if (key < node->m_key) {
                 return operator_helper(node->left, key);
             } else {
