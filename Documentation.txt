@@ -1,0 +1,65 @@
+*******************************DOCUMENTATION*************************************           
+
+                                                                        
+# General Commands
+1) [keys *] - returns all the keys.
+2) [flushall] - clears all DS(data structures): keys and corresponding elements.
+
+# String Commands
+1) [set] - creates a new key with unique name. 
+2) [get] - returns the information from the key
+3) [getrange] -returns the elements of the key within a provided range. 
+4) [exists] - checks if the key exists.
+5) [incr] - increments the key (if the key is an integer).
+6) [incrby] - inrements the key by a given integer (if the key is an integer).
+7) [decr] - decrements the key (if the key is an integer).
+8) [decrby] - decrements the key by a given integer (if the key is an integer).
+9) [append] - appends given input to the key
+10)[del]   - deletes the given key(s)
+
+
+# List Commands
+1) [lpush] - adds an element to the key from its head.        
+2) [rpush] - adds an element to the key from its tail.
+3) [lrange] - returns the elements of the key within a provided range.
+4) [lpop]  - pops the first element of the key. 
+5) [rpop]  - pops the last element of the key. 
+6) [llen]  - returns the size of the key
+7) [lset]  - changes the element of the key at the mentioned index to the new information.
+8) [linsert] -  inserts an element in a position in a key(before or after a specified element in the list)
+9) [lindex]  - returns the element in the key at the index 
+10) [lpushx] - adds an element to an existing key from its head.
+11) [rpushx] - adds an element to an existing key from its tail.
+12) [sort] -  sorts the key.
+13) [lrem] -  removes a given number of an element from the key.
+              
+
+# Set Commands
+1)[sadd] -  adds an element to the key. 
+2)[smembers] - prints all the elements of the key. 
+3)[scard] - returns the number of elements in a key.
+4)[sismember] - checks if the element exists in a given key.
+5)[sdiff] - checks if the two keys are different or not and prints different elements
+6)[sinter] - checks if the two keys are similar or not and prints similar elements
+7)[sunion]  - combines two keys, and prints all the elements
+8)[spop]  - pops the element from the key.
+
+
+# MinHeap Commands
+1) [zadd] - adds elements to the key.
+2) [zrange] - returns the elements of the key within a provided range
+3) [zcard] - returns the number of elements in the key.
+4) [zrem]  - removes the element from the key
+5) [zscore]  - returns the corresponding element in the key.
+
+
+# Hash Commands
+1) [hset] - adds pair of elements to the key
+2) [hkeys] - returns the element_key of the key
+3) [hvals] -  returns the element_value of the key
+4) [hgetall] - returns all the element_key : element_value pairs of the key
+5) [hexists] - checks if the key exists
+6) [hget] - gets the corresponding element_value of the element_key in the key
+7) [hlen] - returns the amount of element_keys in the key
+8) [hstrlen] - gets the amount of characters in the element_value of the key
+9) [hdel] - deletes the corresponding element_value of the element_key of the key
