@@ -15,6 +15,7 @@ request, the server creates a new parser, so for every client the parser is
 unique.
 The Client code is separate from the server class, and must be run on every
 client's CPU.
-The inspiration for such a project came from V. Grigoryan, Director of
+The inspiration for such a project came from V.Grigoryan, Director of
 Picsart Academy.
 In the documentation can be found a brief description and guideline for the commands.
+// Contributer : https://github.com/TigranGhazaryan
