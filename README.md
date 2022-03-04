@@ -17,4 +17,4 @@ The Client code is separate from the server class, and must be run on every
 client's CPU.
 The inspiration for such a project came from V. Grigoryan, Director of
 Picsart Academy.
-Below can be found a brief description and guideline for the commands.
+In the documentation can be found a brief description and guideline for the commands.
