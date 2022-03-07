@@ -189,7 +189,9 @@ public:
 
     void remove(T1 key) {
         unsigned int index = hash_function(key);
-        if (table[index] == nullptr) { return;  }
+        if (table[index] == nullptr) { 
+            return;  
+        }
         auto iter = table[index]->begin();
         unsigned int pos{};
         for (; iter != table[index]->end(); ++iter) {
