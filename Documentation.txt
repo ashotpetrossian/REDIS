@@ -4,6 +4,7 @@
 # General Commands
 1) [keys *] - returns all the keys.
 2) [flushall] - clears all DS(data structures): keys and corresponding elements.
+3) [ping] - pong!
 
 # String Commands
 1) [set] - creates a new key with unique name. 
