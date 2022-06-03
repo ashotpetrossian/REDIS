@@ -112,7 +112,7 @@ private:
     T all_nodes{};
     Vector<T> nodes_vector;
 
-    Node* right_rotate(Node* y) { // y is the parent
+    Node* right_rotate(Node* y) { 
         Node* x = y->left;
         Node* T2 = x->right;
 
@@ -122,7 +122,7 @@ private:
         return x;
     }
 
-    Node* left_rotate(Node* y) { // y is the parent
+    Node* left_rotate(Node* y) { 
         Node* x = y->right;
         Node* T2 = x->left;
 
@@ -133,7 +133,7 @@ private:
     }
 
     int get_balance_factor(Node* node) const {
-        if (node == nullptr) {
+        if (!node) {
             return 0;
         }
         return (height(node->left) - height(node->right));
@@ -189,7 +189,7 @@ private:
     }
 
     Node* deleter(Node* node, T key) {
-        if (node == nullptr) { 
+        if (!node) { 
             return node; 
         } else if (key < node->m_key) {
             node->left = deleter(node->left, key);
@@ -213,9 +213,6 @@ private:
                 node->m_key = tmp->m_key;
                 node->right = deleter(node->right, tmp->m_key);
             }
-        }
-        if (node == nullptr) { 
-            return node; 
         }
         
         int bf = get_balance_factor(node);
@@ -245,20 +242,6 @@ private:
             inorder_printer(node->right);
         }
     }
-
-    // void level_order_printer(Node* node) {
-    //     if (!node) { return; }
-    //     std::queue<Node*> QUEUE;
-    //     QUEUE.push(node);
-    //     while (!QUEUE.empty())
-    //     {
-    //         Node* curr = QUEUE.front();
-    //         std::cout << curr->m_key << " ";
-    //         if (curr->left) { QUEUE.push(curr->left); }
-    //         if (curr->right) { QUEUE.push(curr->right); }
-    //         QUEUE.pop();
-    //     }    
-    // }
 
     Node* min_value(Node* node) const {
         if (node == nullptr) {
